@@ -1,5 +1,6 @@
 allure-results/
 allure-report/
+junit-results/
 node_modules/
 screenshots/
 output/
