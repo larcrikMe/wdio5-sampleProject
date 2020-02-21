@@ -4,7 +4,8 @@
   "description": "a sample project",
   "main": "index.js",
   "scripts": {
-    "test": "wdio"
+    "test": "wdio",
+    "report": "allure generate allure-results/ && allure open"
   },
   "author": "Larisa",
   "license": "ISC",
