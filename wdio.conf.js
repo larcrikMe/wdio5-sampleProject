@@ -143,7 +143,11 @@ exports.config = {
     //     }]],
  
     reporters: ['spec', ['junit', {
-        outputDir: 'output'}],
+        outputDir: 'junit-results',
+        outputFileFormat: function(options) { // optional
+            return `results-${options.cid}.${options.capabilities}.xml`;
+        }
+    }],
     ['allure', {
         outputdir: 'allure-results',
         disableWebdriverStepsReporting: true,
