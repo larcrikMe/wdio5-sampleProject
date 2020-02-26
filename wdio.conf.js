@@ -142,17 +142,18 @@ exports.config = {
     //         outputDir: './output'
     //     }]],
  
-    reporters: ['spec', ['junit', {
+    reporters: ['dot', ['junit', {
         outputDir: 'junit-results',
-        outputFileFormat: function(options) { // optional
-            return `results-${options.cid}.${options.capabilities}.xml`;
-        }
+        // outputFileFormat: function(options) { // optional
+        //     return `results-${options.cid}.${options.capabilities}.xml`;
+        // }
     }],
-    ['allure', {
-        outputdir: 'allure-results',
-        disableWebdriverStepsReporting: true,
-        disableWebdriverScreenshotsReporting: true,
-    }]],
+    // ['allure', {
+    //     outputdir: 'allure-results',
+    //     disableWebdriverStepsReporting: true,
+    //     disableWebdriverScreenshotsReporting: true,
+    // }]
+    ],
     //
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
